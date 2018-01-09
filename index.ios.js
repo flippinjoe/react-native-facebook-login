@@ -5,6 +5,7 @@ import {
   View,
   StyleSheet,
   NativeModules,
+  ViewPropTypes,
   NativeMethodsMixin,
   DeviceEventEmitter,
   requireNativeComponent
@@ -90,7 +91,7 @@ class FBLogin extends Component {
 }
 
 FBLogin.propTypes = {
-  style: View.propTypes.style,
+  style: ViewPropTypes.style,
   permissions: PropTypes.array, // default: ["public_profile", "email"]
   loginBehavior: PropTypes.number, // default: Native
   onLogin: PropTypes.func,
